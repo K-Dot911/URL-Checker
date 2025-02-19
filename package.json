@@ -1,0 +1,16 @@
+{
+  "name": "url-checker",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"cd src/client && npm run dev\" \"cd src/server && npm run dev\"",
+    "build": "npm i && cd src/client && npm i && npm run build && cd ../server && npm i && npm run build",
+    "migrate": "cd src/server && npx prisma migrate deploy && npx prisma generate",
+    "seeds": "cd src/server && tsx prisma/seed.ts",
+    "start": "concurrently \"cd src/client && npm run start:prod\" \"cd src/server && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
+

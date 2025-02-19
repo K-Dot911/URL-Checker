@@ -1,0 +1,43 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 1fr;
+  width: 100%;
+  border: 1px solid black;
+  max-width: 1200px;
+}
+
+.header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 8px;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.row {
+  padding: 8px;
+  border: 1px solid black;
+}
+
+.processing-button {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.no-data {
+  font-size: 25px;
+}
